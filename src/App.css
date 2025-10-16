@@ -1,0 +1,250 @@
+body {
+  background-color: #111010;
+  color: #EBF5FC;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+h1,
+h2 {
+  text-align: center;
+  width: 100%;
+  margin: 3% 0 0;
+}
+
+header {
+  height: 20%;
+}
+
+a {
+  color: #D2C3FE;
+}
+
+a:hover {
+  font-weight: 600;
+  color: #9FC5FD;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.stageContainer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+}
+
+.stageContainer {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputSystemContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  width: 100%;
+  height: 100%;
+}
+
+.inputContainer,
+.keyboardContainer {
+  width: 100%;
+}
+
+.InputSystemContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+}
+
+.keyboardContainer {
+  height: 50%;
+}
+
+.keyboard {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: solid 2px #111010;
+  flex-wrap: wrap;
+  gap: 1%;
+  row-gap: 5%;
+  background: linear-gradient(90deg, rgba(142, 197, 252, 1) 0%, rgba(161, 216, 255, 1) 35%, rgba(224, 195, 255, 1) 100%);
+  padding: 1%;
+  border-radius: 15px;
+}
+
+.letterKey,
+.numberKey,
+.backspace,
+.tick {
+  background: transparent;
+  height: 30%;
+  border: solid 3px #111010;
+  color: #111010;
+  font-weight: 600;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: start;
+  font-size: 30px;
+}
+
+.letterKey,
+.numberKey {
+  width: 9%;
+}
+
+.backspace,
+.tick {
+  width: 19%;
+}
+
+.letterKey:hover,
+.numberKey:hover,
+.backspace:hover,
+.tick:hover {
+  background-color: #111010;
+  color: #B8C4FE;
+}
+
+.backspace:hover .backspaceIcon,
+.tick:hover .tickIcon {
+  fill: #B8C4FE;
+}
+
+.textDisplay {
+  width: 40%;
+  background-color: #272626;
+  border-radius: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 1%;
+  padding: 10px;
+}
+
+.textDisplayActive {
+  border: solid 2px #B8C4FE;
+}
+
+.textDisplayTextPresent {
+  padding-bottom: 10px;
+}
+
+
+
+.textDisplay p {
+  width: 100%;
+  margin: 0;
+}
+
+.inputText {
+  color: #656565;
+  font-size: 30px;
+  margin-bottom: 1%;
+}
+
+.inputLabelNormal {
+  color: #656565;
+  font-size: 20px;
+}
+
+.inputLabelSmall {
+  color: #9FC5FD;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 1%;
+}
+
+.navContainerSingleButton {
+  justify-content: center;
+}
+
+.navContainerDoubleButtons {
+  justify-content: space-evenly;
+}
+
+.navButtonLeft {
+  background-color: #111010;
+  border: solid 2px #9FC5FD;
+  border-radius: 5px;
+  color: #9FC5FD;
+}
+
+.navButtonLeft:hover {
+  background-color: #9FC5FD;
+  color: #111010;
+}
+
+.navButtonRight {
+  background-color: #111010;
+  border: solid 2px #D2C3FE;
+  border-radius: 5px;
+  color: #D2C3FE;
+}
+
+.navButtonRight:hover {
+  background-color: #D2C3FE;
+  color: #111010;
+}
+
+
+.textContainer {
+  background-color: #3f3f3f;
+  padding: 2%;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.dateContainer {
+  width: 100%;
+  gap: 5%;
+}
+
+.dateContainer div {
+  width: 15%;
+  height: 24px;
+  border: solid 2px #3f3f3f;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.dateContainer p {
+  margin: 0;
+  text-align: center;
+}
+
+.dateBlank {
+  color: #3f3f3f;
+}
+
+.datePopulated {
+  color: #D2C3FE;
+}
