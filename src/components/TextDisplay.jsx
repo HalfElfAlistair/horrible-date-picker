@@ -1,4 +1,3 @@
-import { useState } from 'react'
 export const TextDisplay = ({ currentText, displayKeyboard, toggleDisplayKeyboard, placeHolder }) => {
     const textPresent = currentText.length > 0;
     return (

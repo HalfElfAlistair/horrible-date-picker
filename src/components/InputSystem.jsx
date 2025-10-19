@@ -54,27 +54,4 @@ export const InputSystem = ({ updateBirthDate, dateKey, placeHolder }) => {
             </div>
         </div>
     )
-
-    // return (
-    //     <div className='flex-center'>
-    //         <div className='inputContainer flex-center'>
-    //             <TextDisplay
-    //                 currentText={currentText}
-    //                 displayKeyboard={displayKeyboard}
-    //                 toggleDisplayKeyboard={toggleDisplayKeyboard}
-    //             />
-    //         </div>
-    //         <div className='keyboardContainer flex-center'>
-    //             {displayKeyboard && (
-    //                 <Keyboard
-    //                     addLetter={addLetter}
-    //                     deleteLetter={deleteLetter}
-    //                     updateBirthDate={updateBirthDate}
-    //                     currentText={currentText}
-    //                     dateKey={dateKey}
-    //                 />
-    //             )}
-    //         </div>
-    //     </div>
-    // )
 }
