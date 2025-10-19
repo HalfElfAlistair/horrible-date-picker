@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import { Keyboard } from './components/Keyboard';
-import { TextDisplay } from './components/TextDisplay';
 import { Heading } from './components/Heading';
 import { Nav } from './components/Nav';
 import { StageOne } from './components/stages/StageOne';
@@ -52,32 +50,13 @@ function App() {
       className='container flex-center'
     >
       <Heading birthDate={currentStage > 1 ? birthDate : undefined} />
+      {currentStage > 1 && <Nav stage={currentStage} updateStage={updateStage} birthDate={birthDate} />}
       {renderStage()}
-      <Nav stage={currentStage} updateStage={updateStage} birthDate={birthDate} />
+      {currentStage < 2 && <Nav stage={currentStage} updateStage={updateStage} birthDate={birthDate} landing={true} />}
+
     </div>
 
   )
-
-
-  // return (
-  //   <>
-  //     <div className='container flex-center' onClick={(e) => { toggleDisplayKeyboard(e, false) }}>
-  //       <div className='headingContainer'>
-  //         <h1>Horrible Date Picker</h1>
-  //       </div>
-  // <div className='inputContainer flex-center'>
-  //   <TextDisplay
-  //     currentText={currentText}
-  //     displayKeyboard={displayKeyboard}
-  //     toggleDisplayKeyboard={toggleDisplayKeyboard}
-  //   />
-  // </div>
-  // <div className='keyboardContainer flex-center'>
-  //   {displayKeyboard && <Keyboard addLetter={addLetter} deleteLetter={deleteLetter} />}
-  // </div>
-  //     </div>
-  //   </>
-  // )
 }
 
 export default App
