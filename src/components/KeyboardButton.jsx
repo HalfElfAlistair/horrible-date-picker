@@ -4,9 +4,9 @@ export const KeyboardButton = ({ title, buttonClass, buttonEvent }) => {
     const buttonContent = () => {
         switch (title) {
             case 'Backspace':
-                return <BackSpace height='24px' width='24px' fill='#111010' />
+                return <BackSpace height='36px' width='36px' fill='#111010' />
             case 'Tick':
-                return <Tick height='24px' width='24px' fill='#111010' />
+                return <Tick height='36px' width='36px' fill='#111010' />
             default:
                 return title
         }
