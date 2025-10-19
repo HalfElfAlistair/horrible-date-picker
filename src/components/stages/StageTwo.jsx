@@ -1,8 +1,8 @@
-import { InputSystem } from "../InputSystem";
+import { CardsSelection } from "../CardsSelection";
 export const StageTwo = ({ updateBirthDate }) => {
     return (
         <div className='stageContainer'>
-            <InputSystem updateBirthDate={updateBirthDate} dateKey='year' placeHolder='Which year were you born?' />
+            <CardsSelection updateBirthDate={updateBirthDate} />
         </div>
     )
 }
