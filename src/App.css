@@ -12,7 +12,7 @@ h2 {
 }
 
 header {
-  height: 20%;
+  height: 10%;
 }
 
 a {
@@ -38,19 +38,11 @@ a:hover {
 
 .stageContainer {
   width: 100%;
-  height: 60%;
+  height: 70%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-content: space-evenly;
-}
-
-.stageContainer {
-  width: 100%;
-  height: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .inputSystemContainer {
@@ -65,13 +57,6 @@ a:hover {
 .inputContainer,
 .keyboardContainer {
   width: 100%;
-}
-
-.InputSystemContainer {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: space-evenly;
 }
 
 .navContainer {
@@ -147,7 +132,7 @@ a:hover {
   align-items: center;
   flex-wrap: wrap;
   padding-left: 1%;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .textDisplayActive {
@@ -191,31 +176,6 @@ a:hover {
   justify-content: space-evenly;
 }
 
-.navButtonLeft {
-  background-color: #111010;
-  border: solid 2px #9FC5FD;
-  border-radius: 5px;
-  color: #9FC5FD;
-}
-
-.navButtonLeft:hover {
-  background-color: #9FC5FD;
-  color: #111010;
-}
-
-.navButtonRight {
-  background-color: #111010;
-  border: solid 2px #D2C3FE;
-  border-radius: 5px;
-  color: #D2C3FE;
-}
-
-.navButtonRight:hover {
-  background-color: #D2C3FE;
-  color: #111010;
-}
-
-
 .textContainer {
   background-color: #3f3f3f;
   padding: 2%;
@@ -224,16 +184,24 @@ a:hover {
 }
 
 .dateContainer {
-  width: 100%;
+  width: 50%;
   gap: 5%;
 }
 
 .dateContainer div {
   width: 15%;
   height: 24px;
-  border: solid 2px #3f3f3f;
+  /* border: solid 2px #3f3f3f; */
   border-radius: 5px;
   padding: 5px;
+}
+
+.activeDateContainer {
+  border: solid 2px #B8C4FE;
+}
+
+.inactiveDateContainer {
+  border: solid 2px #3f3f3f;
 }
 
 .dateContainer p {
@@ -246,5 +214,96 @@ a:hover {
 }
 
 .datePopulated {
+  color: #B8C4FE;
+}
+
+.padlock {
+  position: fixed;
+  z-index: 3;
+}
+
+.cardsActions,
+.cardsHand {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cardsActions {
+  height: 20%;
+}
+
+.cardsHand {
+  height: 80%;
+}
+
+.drawButton,
+.tickButton {
+  width: 15%;
+  padding: 1%;
+  background-color: #111010;
+  border-radius: 10px;
+}
+
+.drawButton {
+  border: solid 3px #9FC5FD;
+  color: #9FC5FD;
+  font-size: 30px;
+}
+
+.drawButton:hover {
+  background-color: #9FC5FD;
+  color: #111010;
+}
+
+.tickButton {
+  border: solid 3px #D2C3FE;
   color: #D2C3FE;
+}
+
+.tickButton:hover {
+  background-color: #D2C3FE;
+}
+
+.tickButton:hover svg {
+  fill: #111010;
+}
+
+.btnTransparent {
+  width: 10%;
+  padding: 0;
+  border: none;
+  background: transparent;
+}
+
+.nextIcon circle {
+  fill: none;
+  stroke: #D2C3FE;
+}
+
+.nextIcon:hover circle {
+  fill: #D2C3FE;
+}
+
+.nextIcon path {
+  stroke: #D2C3FE;
+}
+
+.nextIcon:hover path,
+.previousIcon:hover path {
+  stroke: #111010;
+}
+
+.previousIcon circle {
+  fill: none;
+  stroke: #9FC5FD;
+}
+
+.previousIcon:hover circle {
+  fill: #9FC5FD;
+}
+
+.previousIcon path {
+  stroke: #9FC5FD;
 }
