@@ -318,7 +318,7 @@ export const CardsSelection = ({ updateBirthDate }) => {
         <div className='inputSystemContainer flex-center'>
             <div className='cardsActions'>
                 <button className='drawButton' onClick={() => drawCards()}>Draw</button>
-                <button className='tickButton' onClick={() => confirmYear()}>
+                <button className='tickButton flex-center' onClick={() => confirmYear()}>
                     <Tick height='36px' width='36px' fill='#D2C3FE' />
                 </button>
             </div>
@@ -327,7 +327,11 @@ export const CardsSelection = ({ updateBirthDate }) => {
                     const { text, symbol } = currentCards[cardID];
                     const lockedStatus = currentCards[cardID].locked;
                     return (
-                        <div key={cardID} onClick={() => lockedStatus ? unLockFunction(cardID) : lockFunction(cardID, i)}>
+                        <div
+                            key={cardID}
+                            className='cardContainer'
+                            onClick={() => lockedStatus ? unLockFunction(cardID) : lockFunction(cardID, i)}
+                        >
                             <Card
                                 cardID={cardID}
                                 colour={(symbol === 'spade' || symbol === 'club') ? '#9FC5FD' : '#D2C3FE'}

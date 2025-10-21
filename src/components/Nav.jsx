@@ -31,7 +31,7 @@ export const Nav = ({ stage, updateStage, birthDate, landing }) => {
         <div className={`navContainer ${stageCheck ? 'navContainerDoubleButtons' : 'navContainerSingleButton'}`}>
             <button
                 onClick={() => updateStage(stage > 1 ? stage - 1 : 2)}
-                className={stage > 1 ? 'btnTransparent' : 'btnTransparent'}
+                className={stage > 1 ? 'btnTransparent navButton' : 'btnTransparent'}
             >
                 {stage > 1 ? <Previous height='40%' width='40%' /> : <Next height='40%' width='40%' />}
             </button>
@@ -58,7 +58,7 @@ export const Nav = ({ stage, updateStage, birthDate, landing }) => {
             {stageCheck && (
                 <button
                     onClick={() => updateStage(stage + 1)}
-                    className='btnTransparent'
+                    className='btnTransparent navButton'
                     disabled={stage === 4 && (datePopulatedCheck(day) || datePopulatedCheck(month) || datePopulatedCheck(year))}
                 >
                     {stage < 5 ? <Next height='40%' width='40%' fill='#D2C3FE' /> : 'Complete'}

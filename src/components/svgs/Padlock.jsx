@@ -6,6 +6,7 @@ export const Padlock = ({ width }) => {
             width={width}
             fill="none"
             className='padlock'
+            x='-13.5'
         >
             <rect
                 width="30"
