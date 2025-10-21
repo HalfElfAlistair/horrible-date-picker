@@ -15,6 +15,7 @@ export const KeyboardButton = ({ title, buttonClass, buttonEvent }) => {
         <button
             className={buttonClass}
             onClick={() => buttonEvent(title)}
+            title={title}
         >
             {buttonContent()}
         </button>
