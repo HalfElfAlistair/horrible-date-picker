@@ -75,8 +75,18 @@ export const CardsSelection = ({ updateBirthDate }) => {
     return (
         <div className='inputSystemContainer flex-center'>
             <div className='cardsActions'>
-                <button className='drawButton' onClick={() => drawCards()}>Draw</button>
-                <button className='tickButton flex-center' onClick={() => confirmYear()}>
+                <button
+                    className='drawButton'
+                    onClick={() => drawCards()}
+                    title='Draw cards'
+                >
+                    Draw
+                </button>
+                <button
+                    className='tickButton flex-center'
+                    onClick={() => confirmYear()}
+                    title='Confirm'
+                >
                     <Tick height='36px' width='36px' fill='#D2C3FE' />
                 </button>
             </div>
