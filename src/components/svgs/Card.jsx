@@ -6,13 +6,13 @@ import { Diamond } from "./Diamond";
 export const Card = ({ colour, text, symbol, lockedStatus }) => {
     const symbolSelect = () => {
         switch (symbol) {
-            case 'spade':
+            case 'spades':
                 return <Spade fill={colour} />
-            case 'heart':
+            case 'hearts':
                 return <Heart fill={colour} />
-            case 'club':
+            case 'clubs':
                 return <Club fill={colour} />
-            case 'diamond':
+            case 'diamonds':
                 return <Diamond fill={colour} />
         }
     }
