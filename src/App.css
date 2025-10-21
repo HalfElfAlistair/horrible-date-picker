@@ -11,6 +11,10 @@ h2 {
   margin: 3% 0 0;
 }
 
+h1 {
+  font-size: 46px;
+}
+
 header {
   height: 10%;
 }
@@ -46,17 +50,13 @@ a:hover {
 }
 
 .inputSystemContainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  width: 100%;
+  width: 60%;
   height: 100%;
 }
 
-.inputContainer,
-.keyboardContainer {
+.inputContainer {
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .navContainer {
@@ -71,7 +71,7 @@ a:hover {
 }
 
 .keyboard {
-  width: 60%;
+  width: 660px;
   height: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .textDisplay {
-  width: 40%;
+  width: 660px;
   background-color: #272626;
   border-radius: 30px;
   display: flex;
@@ -179,7 +179,7 @@ a:hover {
 .textContainer {
   background-color: #3f3f3f;
   padding: 2%;
-  width: 40%;
+  width: 600px;
   border-radius: 10px;
 }
 
@@ -191,7 +191,6 @@ a:hover {
 .dateContainer div {
   width: 15%;
   height: 24px;
-  /* border: solid 2px #3f3f3f; */
   border-radius: 5px;
   padding: 5px;
 }
@@ -226,8 +225,9 @@ a:hover {
 .cardsHand {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  gap: 5%;
 }
 
 .cardsActions {
@@ -240,10 +240,11 @@ a:hover {
 
 .drawButton,
 .tickButton {
-  width: 15%;
+  width: 100%;
   padding: 1%;
   background-color: #111010;
   border-radius: 10px;
+  height: 60px;
 }
 
 .drawButton {
@@ -306,4 +307,212 @@ a:hover {
 
 .previousIcon path {
   stroke: #9FC5FD;
+}
+
+.tickIcon {
+  width: 36px;
+}
+
+.cardContainer {
+  width: 15%;
+}
+
+
+
+@media only screen and (max-width: 1300px) {
+  .cardContainer {
+    width: 20%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .textContainer {
+    width: 60%;
+  }
+
+  .btnTransparent {
+    width: 150px;
+  }
+
+  .cardContainer {
+    width: 25%;
+  }
+
+  .drawButton,
+  .tickButton {
+    width: 50%;
+  }
+
+  .drawButton {
+    font-size: 26px;
+  }
+
+  .tickIcon,
+  .backspaceIcon {
+    width: 30px;
+  }
+
+  .inputSystemContainer {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .keyboard {
+    width: 90%;
+    height: 60%;
+    padding: 2%;
+  }
+
+  .letterKey,
+  .backspace,
+  .tick {
+    font-size: 24px;
+    height: 24%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .backspaceIcon,
+  .tickIcon {
+    width: 30px;
+  }
+
+  .textDisplay {
+    width: 90%;
+    padding: 8px 16px;
+  }
+
+  .inputLabelNormal {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .textContainer {
+    width: 70%;
+  }
+
+  .inputSystemContainer {
+    width: 80%;
+  }
+
+  .drawButton {
+    font-size: 20px;
+  }
+
+  .backspaceIcon,
+  .tickIcon {
+    width: 26px;
+  }
+
+  .keyboard {
+    width: 390px;
+    height: 55%;
+  }
+
+  .textDisplay {
+    width: 390px;
+    padding: 6px 14px;
+  }
+
+  .inputLabelNormal {
+    font-size: 16px;
+  }
+
+  .letterKey {
+    width: 6%;
+    font-size: 20px;
+  }
+
+  .backspace,
+  .tick {
+    width: 49%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .inputSystemContainer {
+    width: 90%;
+  }
+
+  .keyboardContainer {
+    height: auto;
+  }
+
+  .keyboard {
+    width: 270px;
+    height: 100%;
+  }
+
+  .textDisplay {
+    width: 270px;
+  }
+
+  .letterKey {
+    width: 10%;
+    font-size: 16px;
+    height: 20%;
+  }
+
+  .backspace,
+  .tick {
+    height: 20%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navButton {
+    width: 100px;
+  }
+
+  .dateContainer {
+    width: 90%;
+  }
+
+  .drawButton {
+    font-size: 20px;
+  }
+
+  .tickButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cardContainer {
+    width: 35%;
+  }
+
+  .tickIcon {
+    width: 25px;
+  }
+}
+
+
+@media only screen and (max-width: 440px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .textContainer {
+    width: 65%;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  body {
+    overflow: hidden;
+  }
 }
