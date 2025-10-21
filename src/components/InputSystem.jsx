@@ -28,7 +28,11 @@ export const InputSystem = ({ updateBirthDate, dateKey, placeHolder }) => {
     const [failedDayAttempt, setFailedDayAttempt] = useState(false);
 
     return (
-        <div onClick={(e) => { toggleDisplayKeyboard(e, false) }} className='inputSystemContainer'>
+        <div
+            onClick={(e) => { toggleDisplayKeyboard(e, false) }}
+            className='inputSystemContainer'
+            title='Click to open keyboard below'
+        >
             <div className='inputContainer flex-center'>
                 <TextDisplay
                     currentText={currentText}
